@@ -95,6 +95,7 @@ export function LoanPaymentHistory({ loanId }: Props) {
             address: 'N/A',
             nic: item.customer?.customer_code || item.receipt?.customer?.customer_code || 'N/A',
             center_id: item.receipt?.center?.CSU_id || item.receipt?.center_id || 'N/A',
+            totalPayable: item.total_due || 0,
         };
 
         const receiptData = {
