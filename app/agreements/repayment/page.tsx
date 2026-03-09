@@ -20,7 +20,7 @@ import {
 import { toast } from "react-toastify";
 import { authService } from "@/services/auth.service";
 import { API_BASE_URL, getHeaders } from "@/services/api.config";
-
+import { documentPrintLogService } from "@/services/documentPrintLog.service";
 
 interface Staff {
     id: number;
